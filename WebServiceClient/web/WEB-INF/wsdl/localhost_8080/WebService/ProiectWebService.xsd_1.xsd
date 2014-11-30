@@ -1,0 +1,574 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://webPackage/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webPackage/">
+
+<xs:element name="adaugareComanda" type="tns:adaugareComanda"/>
+
+<xs:element name="adaugareComandaResponse" type="tns:adaugareComandaResponse"/>
+
+<xs:element name="continut" type="tns:continut"/>
+
+<xs:element name="continutResponse" type="tns:continutResponse"/>
+
+<xs:element name="deleteCamion" type="tns:deleteCamion"/>
+
+<xs:element name="deleteCamionResponse" type="tns:deleteCamionResponse"/>
+
+<xs:element name="deleteSofer" type="tns:deleteSofer"/>
+
+<xs:element name="deleteSoferResponse" type="tns:deleteSoferResponse"/>
+
+<xs:element name="delivered" type="tns:delivered"/>
+
+<xs:element name="deliveredResponse" type="tns:deliveredResponse"/>
+
+<xs:element name="destinatii" type="tns:destinatii"/>
+
+<xs:element name="destinatiiResponse" type="tns:destinatiiResponse"/>
+
+<xs:element name="getStare" type="tns:getStare"/>
+
+<xs:element name="getStareResponse" type="tns:getStareResponse"/>
+
+<xs:element name="idComanda" type="tns:idComanda"/>
+
+<xs:element name="idComandaResponse" type="tns:idComandaResponse"/>
+
+<xs:element name="insertCamion" type="tns:insertCamion"/>
+
+<xs:element name="insertCamionResponse" type="tns:insertCamionResponse"/>
+
+<xs:element name="insertSofer" type="tns:insertSofer"/>
+
+<xs:element name="insertSoferResponse" type="tns:insertSoferResponse"/>
+
+<xs:element name="lista" type="tns:lista"/>
+
+<xs:element name="listaResponse" type="tns:listaResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="modifyCamion" type="tns:modifyCamion"/>
+
+<xs:element name="modifyCamionResponse" type="tns:modifyCamionResponse"/>
+
+<xs:element name="modifySofer" type="tns:modifySofer"/>
+
+<xs:element name="modifySoferResponse" type="tns:modifySoferResponse"/>
+
+<xs:element name="numeClient" type="tns:numeClient"/>
+
+<xs:element name="numeClientResponse" type="tns:numeClientResponse"/>
+
+<xs:element name="numeDestinatar" type="tns:numeDestinatar"/>
+
+<xs:element name="numeDestinatarResponse" type="tns:numeDestinatarResponse"/>
+
+<xs:element name="prenumeClient" type="tns:prenumeClient"/>
+
+<xs:element name="prenumeClientResponse" type="tns:prenumeClientResponse"/>
+
+<xs:element name="prenumeDestinatar" type="tns:prenumeDestinatar"/>
+
+<xs:element name="prenumeDestinatarResponse" type="tns:prenumeDestinatarResponse"/>
+
+<xs:element name="register" type="tns:register"/>
+
+<xs:element name="registerResponse" type="tns:registerResponse"/>
+
+<xs:element name="rejected" type="tns:rejected"/>
+
+<xs:element name="rejectedResponse" type="tns:rejectedResponse"/>
+
+<xs:element name="select" type="tns:select"/>
+
+<xs:element name="selectCamioane" type="tns:selectCamioane"/>
+
+<xs:element name="selectCamioaneResponse" type="tns:selectCamioaneResponse"/>
+
+<xs:element name="selectCamion" type="tns:selectCamion"/>
+
+<xs:element name="selectCamionResponse" type="tns:selectCamionResponse"/>
+
+<xs:element name="selectClient" type="tns:selectClient"/>
+
+<xs:element name="selectClientResponse" type="tns:selectClientResponse"/>
+
+<xs:element name="selectDestinatar" type="tns:selectDestinatar"/>
+
+<xs:element name="selectDestinatarResponse" type="tns:selectDestinatarResponse"/>
+
+<xs:element name="selectPack" type="tns:selectPack"/>
+
+<xs:element name="selectPackResponse" type="tns:selectPackResponse"/>
+
+<xs:element name="selectPackage" type="tns:selectPackage"/>
+
+<xs:element name="selectPackageResponse" type="tns:selectPackageResponse"/>
+
+<xs:element name="selectResponse" type="tns:selectResponse"/>
+
+<xs:element name="selectSoferi" type="tns:selectSoferi"/>
+
+<xs:element name="selectSoferiResponse" type="tns:selectSoferiResponse"/>
+
+<xs:element name="stareColet" type="tns:stareColet"/>
+
+<xs:element name="stareColetResponse" type="tns:stareColetResponse"/>
+
+<xs:element name="suma" type="tns:suma"/>
+
+<xs:element name="sumaResponse" type="tns:sumaResponse"/>
+
+<xs:element name="traseu" type="tns:traseu"/>
+
+<xs:element name="traseuResponse" type="tns:traseuResponse"/>
+
+<xs:element name="updateComanda" type="tns:updateComanda"/>
+
+<xs:element name="updateComandaResponse" type="tns:updateComandaResponse"/>
+
+<xs:element name="volum" type="tns:volum"/>
+
+<xs:element name="volumResponse" type="tns:volumResponse"/>
+
+<xs:complexType name="adaugareComanda">
+<xs:sequence>
+<xs:element name="numeClient" type="xs:string" minOccurs="0"/>
+<xs:element name="prenumeClient" type="xs:string" minOccurs="0"/>
+<xs:element name="stradaClient" type="xs:string" minOccurs="0"/>
+<xs:element name="numarClient" type="xs:string" minOccurs="0"/>
+<xs:element name="blocClient" type="xs:string" minOccurs="0"/>
+<xs:element name="scaraClient" type="xs:string" minOccurs="0"/>
+<xs:element name="apartamentClient" type="xs:string" minOccurs="0"/>
+<xs:element name="orasClient" type="xs:string" minOccurs="0"/>
+<xs:element name="judetClient" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="telefon" type="xs:string" minOccurs="0"/>
+<xs:element name="numeDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="prenumeDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="stradaDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="numarDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="blocDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="scaraDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="apartamentDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="orasDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="judetDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="continut" type="xs:string" minOccurs="0"/>
+<xs:element name="prioritate" type="xs:int"/>
+<xs:element name="volum" type="xs:float"/>
+<xs:element name="stare" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="adaugareComandaResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="register">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="destinatii">
+<xs:sequence>
+<xs:element name="idcamion" type="xs:string" minOccurs="0"/>
+<xs:element name="judet" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="destinatiiResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="volum">
+<xs:sequence>
+<xs:element name="judet" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="volumResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectCamioane">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="selectCamioaneResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectDestinatar">
+<xs:sequence>
+<xs:element name="nume" type="xs:string" minOccurs="0"/>
+<xs:element name="prenume" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectDestinatarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectSoferi">
+<xs:sequence>
+<xs:element name="tip" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectSoferiResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertSofer">
+<xs:sequence>
+<xs:element name="nume" type="xs:string" minOccurs="0"/>
+<xs:element name="prenume" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertSoferResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="insertCamion">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="volum" type="xs:float"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertCamionResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="selectPackage">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectPackageResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delivered">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deliveredResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="deleteSofer">
+<xs:sequence>
+<xs:element name="nume" type="xs:string" minOccurs="0"/>
+<xs:element name="prenume" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteSoferResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="prenumeClient">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="prenumeClientResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traseu">
+<xs:sequence>
+<xs:element name="idcamion" type="xs:string" minOccurs="0"/>
+<xs:element name="judet" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="traseuResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="continut">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="continutResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectPack">
+<xs:sequence>
+<xs:element name="tip" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectPackResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectClient">
+<xs:sequence>
+<xs:element name="nume" type="xs:string" minOccurs="0"/>
+<xs:element name="prenume" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectClientResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="select">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="selectResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="prenumeDestinatar">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="prenumeDestinatarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numeDestinatar">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numeDestinatarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectCamion">
+<xs:sequence>
+<xs:element name="tip" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectCamionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numeClient">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="numeClientResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rejected">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="motiv" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rejectedResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="updateComanda">
+<xs:sequence>
+<xs:element name="sessionNumeClient" type="xs:string" minOccurs="0"/>
+<xs:element name="sessionPrenumeClient" type="xs:string" minOccurs="0"/>
+<xs:element name="sessionNumeDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="sessionPrenumeDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="sessionId" type="xs:int"/>
+<xs:element name="numeClient" type="xs:string" minOccurs="0"/>
+<xs:element name="prenumeClient" type="xs:string" minOccurs="0"/>
+<xs:element name="stradaClient" type="xs:string" minOccurs="0"/>
+<xs:element name="numarClient" type="xs:string" minOccurs="0"/>
+<xs:element name="blocClient" type="xs:string" minOccurs="0"/>
+<xs:element name="scaraClient" type="xs:string" minOccurs="0"/>
+<xs:element name="apartamentClient" type="xs:string" minOccurs="0"/>
+<xs:element name="orasClient" type="xs:string" minOccurs="0"/>
+<xs:element name="judetClient" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="telefon" type="xs:string" minOccurs="0"/>
+<xs:element name="numeDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="prenumeDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="stradaDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="numarDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="blocDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="scaraDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="apartamentDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="orasDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="judetDestinatar" type="xs:string" minOccurs="0"/>
+<xs:element name="continut" type="xs:string" minOccurs="0"/>
+<xs:element name="prioritate" type="xs:int"/>
+<xs:element name="volum" type="xs:float"/>
+<xs:element name="stare" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateComandaResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="deleteCamion">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCamionResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="idComanda">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="idComandaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="stareColet">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+<xs:element name="stare" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="stareColetResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="modifySofer">
+<xs:sequence>
+<xs:element name="nume" type="xs:string" minOccurs="0"/>
+<xs:element name="prenume" type="xs:string" minOccurs="0"/>
+<xs:element name="stare" type="xs:string" minOccurs="0"/>
+<xs:element name="numenou" type="xs:string" minOccurs="0"/>
+<xs:element name="prenumenou" type="xs:string" minOccurs="0"/>
+<xs:element name="starenoua" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifySoferResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getStare">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStareResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyCamion">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
+<xs:element name="idnou" type="xs:string" minOccurs="0"/>
+<xs:element name="volumnou" type="xs:float" minOccurs="0"/>
+<xs:element name="starenoua" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="modifyCamionResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="suma">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:float" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="lista">
+<xs:sequence>
+<xs:element name="judet" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
